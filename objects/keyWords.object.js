@@ -4,5 +4,6 @@ export const key_words = [
     'assasinato',
     'estupro',
     'violentos',
-    'violento'
+    'violento',
+    'refé'
 ];

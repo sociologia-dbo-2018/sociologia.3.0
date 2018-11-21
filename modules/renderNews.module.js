@@ -1,13 +1,16 @@
-export const renderNews = (item, veiculo) => {
-    const rssGlobal = document.querySelector('.rssglobal');
+export const renderNews = (title, link) => {
+    const divNew = document.querySelector('.news');
     // titulo da noticia
-    const h4 = document.createElement('h4');
-    // Noticia
+    const a = document.createElement('a');
+    // Incluindo link
+    a.href = link;
+    // Incluindo titulo
+    a.textContent = title;
+
     const li = document.createElement('li');
     li.className = 'list-group-item';
-    // Incluindo titulo
-    h4.textContent = item[0].textContent;
-    // linkando no item da list
-    li.appendChild(h4);
-    rssGlobal.appendChild(li);
-}
+
+    li.append(a);
+    divNew.appendChild(li);
+    // console.log(object);
+};

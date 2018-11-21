@@ -1,5 +1,4 @@
 import {getNews} from './modules/rss.module.js';
-// import {formControl} from './modules/formControl.module.js';
 
 document.addEventListener('DOMContentLoaded', init);
 
