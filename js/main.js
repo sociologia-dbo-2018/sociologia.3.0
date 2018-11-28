@@ -1,7 +1,14 @@
 import {getNews} from '../modules/rss.module.js';
+import {loadMap} from '../modules/map.module.js';
 // import {formControl} from './modules/formControl.module.js';
 
-document.addEventListener('DOMContentLoaded', getNews);
+document.addEventListener('DOMContentLoaded', init);
+
+function init() {
+    getNews();
+    // Map
+    loadMap();
+}
 
 // function init() {
 //     // Carregando o Feed Principal do mapa
@@ -11,4 +18,4 @@ document.addEventListener('DOMContentLoaded', getNews);
 //     // Carregando RSS Local
 
 //     // Alguns Eventos
-// }
+// 
